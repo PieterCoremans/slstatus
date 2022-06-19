@@ -1,3 +1,7 @@
+#Slstatus
+This is a slightly modified version of Suckless' Slstatus program.
+For original code, go to suckless.org.
+
 slstatus - suckless status
 ==========================
 slstatus is a suckless status monitor for window managers that use WM_NAME
