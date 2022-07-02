@@ -67,11 +67,11 @@ static const struct arg args[] = {
 	/* function format          argument */
     { keymap, " %s | ", NULL},
 /*    { wifi_perc, "%3s%% | ", "wlp3s0" },*/
-    { run_command, "墳:%4s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+    { run_command, "墳:%5s | ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ cpu_perc, "CPU: %s%% | ", NULL },
 	{ ram_perc, "RAM: %s%% | ", NULL },
-	{ battery_perc, ":%s%% | ", "BAT0"},
+	{ battery_perc, ": %s%% | ", "BAT0"},
 	/*{ vol_perc, "VOL: %s%%] ", "/dev/mixer"},*/
-/*    { run_command, "%10s |",  "network.sh"},*/
+    { run_command, "%5s | ",  "$HOME/.local/bin/network.sh"},
 	{ datetime, "%s", "%d/%m/%Y  %T " },/*"%a %e %B  %T " original argument "%F %T" */
 };
